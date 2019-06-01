@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".FormCadActivity">
+
+    <TextView
+            android:text="EditBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tit_editBook" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:id="@+id/titulo" app:layout_constraintTop_toBottomOf="@+id/tit_cadBook">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hint" android:id="@+id/txt_titulo"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:id="@+id/autor" app:layout_constraintTop_toBottomOf="@+id/titulo">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hint" android:id="@+id/txt_autor"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:id="@+id/editora" app:layout_constraintTop_toBottomOf="@+id/autor">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hint" android:id="@+id/txt_editora"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_categoria" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/editora" app:layout_constraintStart_toStartOf="@+id/editora"
+            app:layout_constraintEnd_toEndOf="@+id/editora" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:id="@+id/dtInicio" app:layout_constraintTop_toBottomOf="@+id/spinner_categoria">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hint" android:id="@+id/txt_dtInicio"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:id="@+id/dtFim" app:layout_constraintTop_toBottomOf="@+id/dtInicio">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hint" android:id="@+id/txt_dtFim"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_editar" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/dtFim" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:hint="@string/btn_edit"
+            app:layout_constraintHorizontal_bias="0.498"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white" android:text="@string/btn_edit" android:padding="8dp"
+            android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingTop="8dp"/>
+
+</android.support.constraint.ConstraintLayout>

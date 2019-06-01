@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ReadApp</string>
+    <string name="btn_save">Salvar</string>
+    <string name="btn_edit">Editar</string>
+    <string-array name="CategoriaList">
+        <item>Romance</item>
+        <item>Ficção Científica</item>
+        <item>Aventura</item>
+        <item>Policial</item>
+        <item>Terror</item>
+        <item>Suspense</item>
+        <item>Tecnologia</item>
+        <item>Gastronomia</item>
+
+    </string-array>
+
+</resources>
