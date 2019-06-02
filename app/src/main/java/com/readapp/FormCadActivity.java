@@ -5,9 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import com.readapp.bookAdapter.BookAdapter;
-import com.readapp.bookDAO.BookDAO;
-import com.readapp.model.Book;
+import com.readapp.dao.BookDAO;
 import com.readapp.helper.BookHelper;
 
 public class FormCadActivity extends AppCompatActivity {

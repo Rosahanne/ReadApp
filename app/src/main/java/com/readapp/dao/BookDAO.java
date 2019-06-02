@@ -1,4 +1,4 @@
-package com.readapp.bookDAO;
+package com.readapp.dao;
 
 import android.content.ContentValues;
 import android.content.Context;

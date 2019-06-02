@@ -7,9 +7,9 @@ import android.widget.ListView;
 import java.util.List;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.readapp.bookAdapter.BookAdapter;
-import com.readapp.bookDAO.BookDAO;
+import com.readapp.adapter.BookAdapter;
 import com.readapp.model.Book;
+import com.readapp.dao.BookDAO;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         BookAdapter adapter = new BookAdapter(bookList, this);
         listViewBooks.setAdapter(adapter);
     }
+
 
 
 }

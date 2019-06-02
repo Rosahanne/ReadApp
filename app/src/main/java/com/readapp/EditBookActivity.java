@@ -7,8 +7,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import com.readapp.bookAdapter.BookAdapter;
-import com.readapp.bookDAO.BookDAO;
+import com.readapp.adapter.BookAdapter;
+import com.readapp.dao.BookDAO;
 import com.readapp.model.Book;
 import com.readapp.helper.BookHelper;
 

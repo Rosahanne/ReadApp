@@ -1,4 +1,4 @@
-package com.readapp.bookAdapter;
+package com.readapp.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import java.util.List;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.readapp.EditBookActivity;
 import com.readapp.MainActivity;
-import com.readapp.bookDAO.BookDAO;
+import com.readapp.dao.BookDAO;
 import com.readapp.model.Book;
 import com.readapp.R;
 
