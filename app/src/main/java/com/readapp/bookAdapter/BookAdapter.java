@@ -56,7 +56,7 @@ public class BookAdapter extends BaseAdapter {
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         View view = act.getLayoutInflater()
-                .inflate(R.layout.activity_item, parent, false);
+                .inflate(R.layout.activity_list_view, parent, false);
         bookDAO = new BookDAO(act);
 
         TextView titulo = (TextView)

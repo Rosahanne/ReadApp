@@ -1,23 +1,19 @@
 package com.readapp;
 
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
-import android.widget.Toast;
 import java.util.List;
 import androidx.appcompat.app.AppCompatActivity;
-import com.readapp.BookDAO;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.readapp.bookAdapter.BookAdapter;
 import com.readapp.bookDAO.BookDAO;
 import com.readapp.model.Book;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Fl fabAddBook;
+    private FloatingActionButton fabAddBook;
     private ListView listViewBooks;
     private BookDAO bookDAO;
 
@@ -27,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listViewBooks=(findViewById(R.id.main_listViewBooks));
-        fabAddBook=(findViewById(R.id.AddBook));
+        fabAddBook=(findViewById(R.id.fab_AddBook));
 
         fabAddBook.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume(){
         super.onResume();
         BookDAO bookDAO = new BookDAO(this);
-        List<Book> bookList = ookDAO();
-        BookAdapter adapterB = new BookAdapter(bookList, this);
-        listViewBooks.setAdapter(adapterB);
+        List<Book> bookList = bookDAO.bookListFull();
+        BookAdapter adapter = new BookAdapter(bookList, this);
+        listViewBooks.setAdapter(adapter);
     }
 
 
-}}
+}
 

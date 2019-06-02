@@ -53,7 +53,7 @@ public class BookDAO extends SQLiteOpenHelper {
         return dados;
     }
 
-    public List<Book> BookList() {
+    public List<Book> bookListFull() {
         SQLiteDatabase db = getReadableDatabase();
         List<Book> BookList = new ArrayList<>();
 
